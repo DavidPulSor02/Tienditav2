@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/fondo1"
+    tools:context=".MainActivity"
+    android:paddingTop="0dp">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/tiendita"
+        android:contentDescription="@string/logo_description" />
+
+    <!-- Título Iniciar Sesión -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inicia_sesion"
+        android:textSize="24sp"
+        android:textColor="@color/purple_700"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Correo o Usuario -->
+    <EditText
+        android:id="@+id/etEmailOrUser"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/correo_usuario"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"/>
+
+    <!-- Contraseña -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/contrasena"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <!-- Olvidaste la contraseña -->
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/olvidaste_contrasena"
+        android:textColor="@color/purple_700"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:gravity="end"/>
+
+    <!-- Botón de iniciar sesión -->
+
+    <!-- Texto O Inicia sesión con -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/purple_500"
+        android:padding="10dp"
+        android:text="@string/iniciar_sesion"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tvOrLoginWith"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/o_inicia_con"
+        android:textColor="@color/purple_700"
+        android:textSize="14sp" />
+
+    <!-- Botón de Google -->
+    <ImageView
+        android:id="@+id/btnGoogleLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:src="@drawable/google_icon"
+        android:contentDescription="@string/google_login" />
+
+    <!-- Texto Regístrate aquí -->
+    <Button
+        android:id="@+id/tvRegisterHere"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/registrate_aqui"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+</LinearLayout>

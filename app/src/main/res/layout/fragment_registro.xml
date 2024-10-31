@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/fondo1"
+    tools:context=".RegistroActivity"
+    android:paddingTop="0dp">
+
+    <!-- Logo -->
+
+    <!-- Título Registro -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/tiendita" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registrate"
+        android:textSize="24sp"
+        android:textColor="@color/purple_700"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Nombre completo -->
+    <EditText
+        android:id="@+id/etFullName"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre_completo"
+        android:inputType="textPersonName"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"/>
+
+    <!-- Correo -->
+
+    <!-- Contraseña -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/correo"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"/>
+
+    <!-- Botón de registro -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/contrasena"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="@string/registrarse"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"/>
+    <ImageView
+        android:id="@+id/btnGoogleLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:src="@drawable/google_icon"
+        android:contentDescription="@string/google_login" />
+    <!-- Texto ya tienes cuenta -->
+    <Button
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ya_tienes_cuenta"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/purple_500"
+        android:layout_marginTop="15dp"
+        android:textSize="14sp"/>
+
+</LinearLayout>

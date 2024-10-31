@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "231384105012",
+    "project_id": "tiendita-f862f",
+    "storage_bucket": "tiendita-f862f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231384105012:android:d272c2a91994be2e070a61",
+        "android_client_info": {
+          "package_name": "com.example.tienditav2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3EB4AzXu-9FvXXS7f9eSzfoXso6Iwjsc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
